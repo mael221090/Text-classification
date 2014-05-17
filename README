@@ -1,3 +1,37 @@
 To launch the script, you need to type the following command in a shell: python script.py.
 
 Then, a menu will appear and will allow you to choose and execute the options you desire to investigate.
+
+Example of the menu:
+********************* Start of the program *********************
+* 1 - Collect the data from the 21 SGML files                  *
+
+* 2 - Feature selection with LDA (Topic modelling)             *
+
+* 3 - Feature selection with LDA and tfIdf combined            *
+
+* 4 - Classification using best features                       *
+
+* 5 - Clustering using the entire dataset                      *
+
+****************************************************************
+Please, select the option you desire:
+
+The first option allows you to collect the data from the SGML files which have to be placed
+within the folder "reuters21578" at the root of the project. Note that for computational
+purposes, the raw data is then stored in a CSV file called "collection.csv" at the root
+of the project.
+
+The second option will use the LDA to select features and will apply the classifiers.
+
+The third option will combined the features selected from both the LDA and the top 1000 most
+frequent terms. The classifiers are then applied.
+
+The fourth option will use the top 1000 most frequent terms. The classifiers are then 
+applied.
+
+The fifth and last option will apply the clustering algorithms.
+
+Note that for any options, you do not need to collect the data by selecting the first option.
+Each option are independent and will either collect the data from the SGML files or from
+the CSV file.
