@@ -1,3 +1,12 @@
+Requirements to launch the program:
+	- install NLTK and dependencies 
+		Once installed, open a python shell and type import nltk and nltk.download(). Then download the following requirements for the project:
+			wordnet, stopwords, words in Corpora + maxent_ne_chunker and maxent_treebank_pos in Models
+	- install pandas and dependencies
+	- install Scikit-learn and dependencies
+	- install gensim and dependencies
+	- install matplotlib and dependencies
+
 To launch the script, you need to type the following command in a shell: python script.py.
 
 Then, a menu will appear and will allow you to choose and execute the options you desire to investigate.
